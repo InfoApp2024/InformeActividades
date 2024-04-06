@@ -18,11 +18,19 @@ header {
   align-items: center;
 }
 
+/* Estilos para el contenedor principal */
+.company-info {
+    display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
 /* Estilos para el logo */
 .company-info img {
     width: 100px; /* Ancho del logo */
-    margin-right: 600px; /* Espacio entre el logo y el texto */
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+    order: -1; /* Cambiamos el orden para que el logo aparezca primero */
 }
+
 
 /* Estilos del contenedor de la información de la empresa */
 .company-info {
