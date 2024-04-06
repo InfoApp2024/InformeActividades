@@ -36,7 +36,7 @@ header {
 /* Estilos para el logo */
 .company-info img {
   width: 65px; /* Cambia el tamaño del logo según sea necesario */
-  margin-left: 50px; /* Ajusta el margen derecho del logo según sea necesario */
+  margin-right: 0px; /* Ajusta el margen derecho del logo según sea necesario */
 }
 
 /* Agregamos un estilo específico para el NIT */
