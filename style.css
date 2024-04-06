@@ -26,8 +26,8 @@ header {
 
 /* Estilos para el logo */
 .company-info img {
-    width: 100px; /* Ancho del logo */
-    margin-right: 20px; /* Espacio entre el logo y el texto */
+    width: 150px; /* Ancho del logo */
+    margin-right: 60px; /* Espacio entre el logo y el texto */
     order: -1; /* Cambiamos el orden para que el logo aparezca primero */
 }
 
