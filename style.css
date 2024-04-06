@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  padding-bottom: 70px; /* Ajusta este valor según el tamaño del footer más un margen adicional */
+  padding-bottom: 70px;
 }
 
 /* Encabezado */
@@ -22,27 +22,27 @@ header {
 /* Estilos para el contenedor principal */
 .company-info {
   display: flex;
-  justify-content: space-between; /* Alinear elementos horizontalmente en los extremos */
+  justify-content: space-between;
   align-items: center;
-  width: 100%; /* Ocupar todo el ancho disponible */
+  width: 100%;
 }
 
 /* Estilos para el texto con la clase proveedor */
 .proveedor {
-  margin: 0; /* Eliminamos el margen predeterminado */
-  text-align: center; /* Centrar el texto horizontalmente */
-  flex-grow: 1; /* Permitir que el texto ocupe todo el espacio disponible */
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
 }
 
 /* Estilos para el logo */
 .company-info img {
-  width: 65px; /* Cambia el tamaño del logo según sea necesario */
-  margin-left: 10px; /* Ajustar el margen izquierdo según sea necesario */
+  width: 65px;
+  margin-left: 10px;
 }
 
 /* Eliminamos el margen horizontal y el margen superior del NIT */
 .company-info p:nth-of-type(2) {
-  margin: 0; /* Eliminar margen horizontal y vertical */
+  margin: 0;
 }
 
 /* Tablas */
@@ -50,6 +50,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 2px solid #ccc;
+  page-break-inside: avoid;
+  margin-bottom: 20px;
 }
 
 th, td {
@@ -68,6 +70,8 @@ main {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 section {
@@ -96,7 +100,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-  margin-bottom: 50px; /* Agregamos un margen inferior */
+  margin-bottom: 50px;
 }
 
 .signature div {
@@ -104,7 +108,24 @@ h2 {
 }
 
 /* Pie de página */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px;
+}
 
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
 
 @media print {
   footer {
@@ -113,6 +134,11 @@ h2 {
   }
   body {
     padding-bottom: 0;
+    padding-top: 50px;
+  }
+  main {
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
 }
 
