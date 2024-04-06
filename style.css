@@ -112,7 +112,7 @@ footer {
   right: 0;
   height: 50px; /* Ajusta el valor según el tamaño deseado del footer */
   background-color: #ccc;
-  color: #fff;
+  color: rgba(255, 255, 255, 0); /* Texto transparente (blanco con 0 de opacidad) */
   padding: 10px;
   text-align: center;
 }
