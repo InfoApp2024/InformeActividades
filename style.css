@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  padding-bottom: 70px; /* Ajusta este valor según el tamaño del footer más un margen adicional */
 }
 
 /* Encabezado */
@@ -95,6 +96,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+  margin-bottom: 50px; /* Agregamos un margen inferior */
 }
 
 .signature div {
@@ -103,17 +105,28 @@ h2 {
 
 /* Pie de página */
 footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* Ajusta el valor según el tamaño deseado del footer */
   background-color: #ccc;
   color: #fff;
   padding: 10px;
   text-align: center;
-  width: 100%;
-  position: static; /* Cambiamos de fixed a static */
-  bottom: auto; /* Removemos la propiedad bottom */
-  left: auto; /* Removemos la propiedad left */
-  z-index: auto; /* Removemos la propiedad z-index */
-  page-break-before: always;
 }
+
+@media print {
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  body {
+    padding-bottom: 0;
+  }
+}
+
 .move-right {
   display: flex;
   justify-content: flex-end;
