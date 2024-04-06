@@ -37,8 +37,8 @@ header {
 
 /* Estilos para el logo */
 .company-info img {
-  width: 50px; /* Cambia el tamaño del logo según sea necesario */
-  margin-right: 20px; /* Reducimos el margen entre el logo y el texto */
+  width: 70px; /* Cambia el tamaño del logo según sea necesario */
+  margin-right: 50px; /* Reducimos el margen entre el logo y el texto */
 }
 
 
