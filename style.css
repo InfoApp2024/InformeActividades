@@ -21,7 +21,7 @@ header {
 /* Estilos para el contenedor principal */
 .company-info {
  display: flex;
-  flex-direction: column; /* Alineamos los elementos en una columna */
+  justify-content: flex-start; /* Posicionamos el logo a la izquierda */
   align-items: center; /* Centramos horizontalmente los elementos */
 }
 .company-info h2,
@@ -37,8 +37,7 @@ header {
 
 /* Estilos para el logo */
 .company-info img {
-    width: 150px; /* Ancho del logo */
-    margin-right: 60px; /* Espacio entre el logo y el texto */
+  margin-right: 20px; /* Reducimos el margen entre el logo y el texto */
 }
 
 /* Estilos para el texto */
