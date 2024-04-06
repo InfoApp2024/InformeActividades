@@ -125,6 +125,8 @@ footer {
 footer p {
   font-size: 14px;
   margin: 0;
+  text-align: center;
+  line-height: 1.5; /* Ajustar el valor según sea necesario */
 }
 
 @media print {
