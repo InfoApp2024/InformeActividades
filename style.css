@@ -8,7 +8,7 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #9c9d9e;
+  background-color: #ccc;
   color: #000;
   padding: 20px;
   max-width: 840px;
@@ -96,7 +96,7 @@ h2 {
 
 /* Pie de página */
 footer {
-  background-color: #333;
+  background-color: #ccc;
   color: #fff;
   padding: 10px;
   text-align: center;
