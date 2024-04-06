@@ -111,8 +111,8 @@ footer {
   left: 0;
   right: 0;
   height: 50px; /* Ajusta el valor según el tamaño deseado del footer */
-  background-color: rgba(205, 205, 205, 0); /* Fondo transparente (balnco con 0% de opacidad) */
-  color: #fff;
+  background-color: #fff;
+  color: #070707;
   padding: 20px;
   text-align: center;
 }
