@@ -21,20 +21,22 @@ header {
 /* Estilos para el contenedor principal */
 .company-info {
   display: flex;
-  justify-content: flex-start; /* Alinear el logo a la izquierda */
+  justify-content: space-between; /* Alinear elementos horizontalmente en los extremos */
   align-items: center;
+  width: 100%; /* Ocupar todo el ancho disponible */
 }
 
 /* Estilos para el texto con la clase proveedor */
 .proveedor {
   margin: 0; /* Eliminamos el margen predeterminado */
-  text-align: center; /* Centramos horizontalmente el texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  flex-grow: 1; /* Permitir que el texto ocupe todo el espacio disponible */
 }
 
 /* Estilos para el logo */
 .company-info img {
   width: 65px; /* Cambia el tamaño del logo según sea necesario */
-  margin-right: 10px; /* Ajustar el margen derecho según sea necesario */
+  margin-left: 10px; /* Ajustar el margen izquierdo según sea necesario */
 }
 
 /* Eliminamos el margen horizontal y el margen superior del NIT */
