@@ -20,10 +20,9 @@ header {
 
 /* Estilos para el contenedor principal */
 .company-info {
-  flex-grow: 1;
   display: flex;
-  justify-content: center; /* Centramos horizontalmente los elementos */
-  align-items: center; /* Centramos verticalmente los elementos */
+  justify-content: flex-start; /* Alinear el logo a la izquierda */
+  align-items: center;
 }
 
 /* Estilos para el texto con la clase proveedor */
@@ -32,16 +31,15 @@ header {
   text-align: center; /* Centramos horizontalmente el texto */
 }
 
-
 /* Estilos para el logo */
 .company-info img {
   width: 65px; /* Cambia el tamaño del logo según sea necesario */
-  margin-right: 0px; /* Ajusta el margen derecho del logo según sea necesario */
+  margin-right: 10px; /* Ajustar el margen derecho según sea necesario */
 }
 
-/* Agregamos un estilo específico para el NIT */
+/* Eliminamos el margen horizontal y el margen superior del NIT */
 .company-info p:nth-of-type(2) {
-  margin-top: 5px; /* Ajusta el margen superior del NIT según sea necesario */
+  margin: 0; /* Eliminar margen horizontal y vertical */
 }
 
 /* Tablas */
