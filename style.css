@@ -18,10 +18,10 @@ header {
   align-items: center;
 }
 
-/* Estilo del logo */
-.logo {
-  width: 100px;
-  height: auto;
+/* Estilos para el logo */
+.company-info img {
+    width: 100px; /* Ancho del logo */
+    margin-right: 70px; /* Espacio entre el logo y el texto */
 }
 
 /* Estilos del contenedor de la información de la empresa */
