@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Encabezado */
+header {
+  background-color: #9c9d9e;
+  color: #000;
+  padding: 20px;
+  max-width: 840px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo del logo */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Estilos del contenedor de la información de la empresa */
+.company-info {
+  flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio restante */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+
+/* Estilos de los textos */
+.company-info h1,
+.company-info p {
+  margin: 0;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Contenido principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Imágenes */
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.images-container img {
+  max-width: 45%;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+/* Firmas */
+.signature {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.signature div {
+  text-align: center;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.move-right {
+  float: right;
+  width: 30%;
+}
+
+.move-right .label {
+  font-weight: bold;
+}
+
+.move-right .answer {
+  font-weight: normal;
+}
+
+.texto-principal {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+}
