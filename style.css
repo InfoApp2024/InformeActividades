@@ -30,6 +30,11 @@ header {
     margin-right: 60px; /* Espacio entre el logo y el texto */
     order: -1; /* Cambiamos el orden para que el logo aparezca primero */
 }
+/* Estilos para el texto */
+.company-info h3, 
+.company-info p {
+    margin: 0; /* Eliminamos el margen predeterminado */
+}
 
 
 /* Estilos del contenedor de la información de la empresa */
