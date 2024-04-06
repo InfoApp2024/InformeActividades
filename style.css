@@ -111,6 +111,10 @@ footer {
 .move-right {
   display: flex;
   justify-content: flex-end;
+    font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
 }
 
 .move-right table {
