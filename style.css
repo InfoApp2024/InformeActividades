@@ -37,8 +37,10 @@ header {
 
 /* Estilos para el logo */
 .company-info img {
-  margin-right: 70px; /* Reducimos el margen entre el logo y el texto */
+  width: 50px; /* Cambia el tamaño del logo según sea necesario */
+  margin-right: 20px; /* Reducimos el margen entre el logo y el texto */
 }
+
 
 /* Estilos para el texto */
 .company-info div {
@@ -58,13 +60,6 @@ header {
 .company-info {
   flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio restante */
   text-align: center; /* Centra el contenido horizontalmente */
-}
-
-
-/* Estilos de los textos */
-.company-info h1,
-.company-info p {
-  margin: 0;
 }
 
 /* Tablas */
