@@ -24,10 +24,11 @@ header {
   justify-content: flex-start; /* Posicionamos el logo a la izquierda */
   align-items: center; /* Centramos horizontalmente los elementos */
 }
-.company-info h2,
-.company-info p {
-  margin: 0; /* Eliminamos el margen predeterminado */
+.company-info h2 {
+  margin-bottom: 10px; /* Agregar un margen inferior para crear un salto de línea */
   text-align: center; /* Centramos horizontalmente el texto */
+}
+
 }
 
 /* Agregamos un estilo específico para el NIT */
