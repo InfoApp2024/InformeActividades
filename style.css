@@ -108,12 +108,12 @@ footer {
   padding: 10px;
   text-align: center;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
+  position: static; /* Cambiamos de fixed a static */
+  bottom: auto; /* Removemos la propiedad bottom */
+  left: auto; /* Removemos la propiedad left */
+  z-index: auto; /* Removemos la propiedad z-index */
+  page-break-before: always;
 }
-
 .move-right {
   display: flex;
   justify-content: flex-end;
