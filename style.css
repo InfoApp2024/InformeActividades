@@ -20,30 +20,28 @@ header {
 
 /* Estilos para el contenedor principal */
 .company-info {
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Centramos horizontalmente los elementos */
+  align-items: center; /* Centramos verticalmente los elementos */
 }
 
-.company-info h2 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/* Agregamos un estilo específico para el NIT */
-.company-info p:nth-of-type(2) {
-  margin-top: 5px;
+/* Estilos para el texto */
+.company-info h2, 
+.company-info p {
+  margin: 0; /* Eliminamos el margen predeterminado */
+  text-align: center; /* Centramos horizontalmente el texto */
 }
 
 /* Estilos para el logo */
 .company-info img {
-  width: 60px;
-  margin-right: 20px;
+  width: 60px; /* Cambia el tamaño del logo según sea necesario */
+  margin-right: 20px; /* Ajusta el margen derecho del logo según sea necesario */
 }
 
-/* Estilos del contenedor de la información de la empresa */
-.company-info {
-  flex-grow: 1;
+/* Agregamos un estilo específico para el NIT */
+.company-info p:nth-of-type(2) {
+  margin-top: 5px; /* Ajusta el margen superior del NIT según sea necesario */
 }
 
 /* Tablas */
