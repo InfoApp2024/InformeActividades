@@ -24,17 +24,30 @@ header {
     align-items: center; /* Centramos verticalmente los elementos */
 }
 
+/* Estilos para el contenedor principal */
+.company-info {
+    display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
 /* Estilos para el logo */
 .company-info img {
     width: 150px; /* Ancho del logo */
     margin-right: 60px; /* Espacio entre el logo y el texto */
-    order: -1; /* Cambiamos el orden para que el logo aparezca primero */
 }
+
+/* Estilos para el texto */
+.company-info div {
+    display: flex; /* Utilizamos flexbox para el contenedor interno */
+    flex-direction: column; /* Alineamos los elementos en una columna */
+}
+
 /* Estilos para el texto */
 .company-info h2, 
 .company-info p {
     margin: 0; /* Eliminamos el margen predeterminado */
 }
+
 
 
 /* Estilos del contenedor de la información de la empresa */
