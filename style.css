@@ -23,11 +23,8 @@ header {
     display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
     align-items: center; /* Centramos verticalmente los elementos */
 }
-
-/* Estilos para el contenedor principal */
-.company-info {
-    display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
-    align-items: center; /* Centramos verticalmente los elementos */
+.company-info h2 {
+    margin-bottom: 10px; /* Agregar un margen inferior para crear un salto de línea */
 }
 
 /* Estilos para el logo */
