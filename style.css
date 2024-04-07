@@ -113,7 +113,7 @@ h2 {
 .signature td {
   display: flex;
   align-items: center; /* Alinear verticalmente en el centro */
-  padding-right: 20px; /* Espacio entre el nombre y el título "Firma" */
+  padding-left: 20px; /* Espacio entre el nombre y el título "Firma" */
 }
 
 .signature td:last-child {
@@ -125,7 +125,7 @@ h2 {
 
 .signature td span {
   white-space: nowrap; /* Evitar que el contenido se divida en varias líneas */
-  margin-right: 20px; /* Espacio entre el título "Firma" y el valor */
+  margin-left: 20px; /* Espacio entre el título "Firma" y el valor */
 }
 
 /* Pie de página */
