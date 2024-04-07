@@ -106,7 +106,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 0;
+  bottom: 70px; /* Ajusta este valor para dejar más espacio entre el contenido y el footer */
   left: 0;
   right: 0;
   height: 30px;
