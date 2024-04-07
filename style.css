@@ -71,7 +71,7 @@ main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 750px;
 }
 
 section {
@@ -133,7 +133,7 @@ footer p {
   }
   main {
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 750px;
   }
 }
 
