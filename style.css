@@ -149,21 +149,9 @@ section.actividad-realizada {
 }
   
 /* Estilos para el pie de página */
-/* Estilos para el pie de página */
 footer {
   background-color: #ccc;
   color: #fff;
-  padding: 20px;
+  padding: 80px;
   text-align: center;
 }
-
-/* Estilos para el pie de página solo en la última página al imprimir */
-@media print {
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-
-
