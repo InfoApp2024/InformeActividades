@@ -108,22 +108,27 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-items: center; /* Alinear verticalmente los elementos */
+  align-items: flex-start; /* Alinear verticalmente en la parte superior */
 }
 
 .signature td {
   text-align: left;
-  padding-right: 40px; /* Aumentar el espacio entre el nombre y la firma */
+  padding-right: 40px; /* Espacio entre el nombre y la firma */
+  vertical-align: top; /* Alinear verticalmente en la parte superior */
 }
 
 .signature td:last-child {
   text-align: right;
   padding-right: 0;
+  vertical-align: top; /* Alinear verticalmente en la parte superior */
 }
 
 .signature td span {
   white-space: nowrap; /* Evitar que el contenido se divida en varias líneas */
+  display: block; /* Tratar cada elemento span como un bloque */
+  margin-bottom: 10px; /* Espacio entre el título y el contenido */
 }
+
 /* Pie de página */
 footer {
   display: flex;
