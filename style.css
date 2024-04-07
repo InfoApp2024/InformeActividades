@@ -165,6 +165,11 @@ footer p {
   color: #333;
 }
 
+/* Espacio entre el contenido y el footer */
+section.actividad-realizada {
+  margin-bottom: 100px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
+}
+
 .right-align {
   text-align: right;
 }
