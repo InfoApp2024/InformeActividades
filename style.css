@@ -155,4 +155,22 @@ footer {
   padding: 30px;
   text-align: center;
   font-size: 9px;
+  display: none; /* Ocultar el footer por defecto */
+}
+
+/* Estilos para el pie de página en la última página */
+@page {
+  margin-bottom: 100px; /* Ajusta el valor según sea necesario para crear espacio suficiente para el footer */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 9px;
 }
