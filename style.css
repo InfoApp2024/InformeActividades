@@ -96,6 +96,7 @@ h2 {
 }
 
 /* Firmas */
+/* Firmas */
 .signature {
   display: flex;
   justify-content: space-around;
@@ -107,11 +108,12 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center; /* Alinear verticalmente los elementos */
 }
 
 .signature td {
   text-align: left;
-  padding-right: 20px; /* Ajusta el valor según el espaciado deseado */
+  padding-right: 40px; /* Aumentar el espacio entre el nombre y la firma */
 }
 
 .signature td:last-child {
@@ -119,15 +121,9 @@ h2 {
   padding-right: 0;
 }
 
-.signature div {
-  text-align: center;
+.signature td span {
+  white-space: nowrap; /* Evitar que el contenido se divida en varias líneas */
 }
-
-.signature td {
-  font-size: 12px; /* Ajusta el tamaño de fuente según tus necesidades */
-  font-weight: bold; /* Opcional: poner el texto en negrita */
-}
-
 /* Pie de página */
 footer {
   display: flex;
