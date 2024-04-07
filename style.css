@@ -20,14 +20,12 @@ header {
 }
 
 /* Estilos para el contenedor principal */
-.main {
+main {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 0 auto 50px; /* Quitamos el margen superior y agregamos margen inferior */
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-  margin-bottom: 50px; /* Espacio en el margen inferior */
 }
 
 /* Tablas */
