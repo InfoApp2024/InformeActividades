@@ -96,37 +96,7 @@ h2 {
 }
 
 /* Firmas */
-.signature {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
 
-.signature tr {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center; /* Alinear verticalmente en el centro */
-}
-
-.signature td {
-  display: flex;
-  align-items: center; /* Alinear verticalmente en el centro */
-  padding-left: 100px; /* Espacio entre el nombre y el título "Firma" */
-}
-
-.signature td:last-child {
-  display: flex;
-  align-items: center; /* Alinear verticalmente en el centro */
-  
-  padding-right: 0;
-}
-
-.signature td span {
-  white-space: nowrap; /* Evitar que el contenido se divida en varias líneas */
-  margin-left: 200px; /* Espacio entre el título "Firma" y el valor */
-}
 
 /* Pie de página */
 footer {
