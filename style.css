@@ -100,7 +100,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .signature tr {
@@ -127,6 +127,7 @@ h2 {
   white-space: nowrap; /* Evitar que el contenido se divida en varias líneas */
   margin-right: 20px; /* Espacio entre el título "Firma" y el valor */
 }
+
 /* Pie de página */
 footer {
   display: flex;
