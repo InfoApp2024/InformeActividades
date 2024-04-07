@@ -96,6 +96,15 @@ h2 {
 }
 
 /* Firmas */
+.signature {
+  font-size: 10px;
+  text-align: center;
+}
+
+.signature-info {
+  line-height: 1;
+}
+
 
 
 /* Pie de página */
