@@ -71,7 +71,7 @@ main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 
 section {
@@ -167,7 +167,7 @@ footer p {
 
 /* Espacio entre el contenido y el footer */
 section.actividad-realizada {
-  margin-bottom: 100px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
+  margin-bottom: 300px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
 }
 
 .right-align {
