@@ -125,7 +125,7 @@ h2 {
 
 .signature td span {
   white-space: nowrap; /* Evitar que el contenido se divida en varias líneas */
-  margin-left: 20px; /* Espacio entre el título "Firma" y el valor */
+  margin-left: 80px; /* Espacio entre el título "Firma" y el valor */
 }
 
 /* Pie de página */
