@@ -96,7 +96,6 @@ h2 {
 }
 
 /* Firmas */
-/* Firmas */
 .signature {
   display: flex;
   justify-content: space-around;
@@ -113,7 +112,7 @@ h2 {
 
 .signature td {
   text-align: left;
-  padding-right: 40px; /* Espacio entre el nombre y la firma */
+  padding-right: 100px; /* Espacio entre el nombre y la firma */
   vertical-align: top; /* Alinear verticalmente en la parte superior */
 }
 
