@@ -71,7 +71,7 @@ main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  margin-bottom: 750px;
+  margin-bottom: 80px;
 }
 
 section {
@@ -108,7 +108,7 @@ h2 {
   }
   main {
     margin-top: 50px;
-    margin-bottom: 750px;
+    margin-bottom: 80px;
   }
 
 .move-right {
@@ -149,16 +149,21 @@ section.actividad-realizada {
 }
   
 /* Estilos para el pie de página */
+/* Estilos para el pie de página */
 footer {
-  background-color: #333;
+  background-color: #ccc;
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-size: 9px;
 }
 
+/* Estilos para el pie de página solo en la última página al imprimir */
+@media print {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
   
-}
+
+
