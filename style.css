@@ -148,8 +148,9 @@ section.actividad-realizada {
   text-align: right;
 }
 footer {
-  background-color: #333;
+  background-color: #ccc;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  font-size: 9px;
 }
