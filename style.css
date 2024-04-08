@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  padding-bottom: 70px;
+  padding-bottom: 70px; /* Ajusta este valor si usas otro método */
 }
 
 /* Encabezado */
@@ -72,6 +72,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   margin-bottom: 80px;
+  min-height: calc(100vh - 200px); /* Ajusta este valor según la altura del pie de página */
 }
 
 section {
@@ -98,76 +99,45 @@ h2 {
 /* Firmas */
 .signature {
   font-size: 10px;
-  }
-
-@media print {
-  
-  body {
-    padding-bottom: 0;
-    padding-top: 50px;
-  }
-  main {
-    margin-top: 50px;
-    margin-bottom: 80px;
-  }
-
-.move-right {
-  display: flex;
-  justify-content: flex-end;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #333;
 }
 
-.move-right table {
-  width: 30%;
-}
-
-.move-right .label {
-  font-weight: bold;
-}
-
-.move-right .answer {
-  font-weight: normal;
-}
-
-.texto-principal {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #333;
-}
-
-/* Espacio entre el contenido y el footer */
-section.actividad-realizada {
-  margin-bottom: 300px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
-}
-
-.right-align {
-  text-align: right;
-}
-  
-/* Estilos para el footer */
+/* Estilos para el pie de página */
 footer {
-    position: fixed;
-    bottom: 40px; /* Ajusta la distancia del footer al borde inferior */
-    left: 0;
-    width: 100%;
-    text-align: center; /* Centra el texto */
-    font-size: 70%; /* Ajusta el tamaño del texto del pie de página */
-    z-index: 1000; /* Asegura que el footer esté sobre cualquier otro contenido */
+  position: fixed;
+  bottom: 40px; /* Ajusta la distancia del pie de página al borde inferior */
+  left: 0;
+  width: 100%;
+  text-align: center; /* Centra el texto */
+  font-size: 70%; /* Ajusta el tamaño del texto del pie de página */
+  z-index: 1000; /* Asegura que el footer esté sobre cualquier otro contenido */
 }
 
 /* Estilos para el texto en negrita */
 footer strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Estilo para la línea debajo del texto */
 footer .custom-line {
-    border: none;
-    border-bottom: 1px solid #000;
-    margin: 20px auto; /* Centra la línea horizontal */
-    width: 50%; /* Ajusta la anchura de la línea según sea necesario */
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 20px auto; /* Centra la línea horizontal */
+  width: 50%; /* Ajusta la anchura de la línea según sea necesario */
 }
+
+/* Media Queries para impresión */
+@media print {
+  footer {
+    /* Ajusta los estilos del pie de página aquí para imprimir */
+  }
+  
+  main {
+    /* Ajusta los estilos del contenido principal aquí para imprimir */
+  }
+}
+
+/* Ajustes adicionales */
+.move-right {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Arial, sans-serif;
