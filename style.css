@@ -5,7 +5,6 @@ body {
   padding: 0;
   background-color: transparent;
   padding-bottom: 600px;
-
 }
 
 /* Encabezado */
@@ -73,7 +72,6 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   margin-bottom: 80px;
-  
 }
 
 section {
@@ -100,86 +98,77 @@ h2 {
 /* Firmas */
 .signature {
   font-size: 10px;
-  }
+}
 
 @media print {
-  
   body {
-    padding-bottom: 0;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
+
   main {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    flex: 1;
   }
 
-.move-right {
-  display: flex;
-  justify-content: flex-end;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #333;
-}
+  .move-right {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+  }
 
-.move-right table {
-  width: 30%;
-}
+  .move-right table {
+    width: 30%;
+  }
 
-.move-right .label {
-  font-weight: bold;
-}
+  .move-right .label {
+    font-weight: bold;
+  }
 
-.move-right .answer {
-  font-weight: normal;
-}
+  .move-right .answer {
+    font-weight: normal;
+  }
 
-.texto-principal {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #333;
-}
+  .texto-principal {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+  }
 
-/* Espacio entre el contenido y el footer */
-section.actividad-realizada {
-  margin-bottom: 300px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
-}
+  /* Espacio entre el contenido y el footer */
+  section.actividad-realizada {
+    margin-bottom: 300px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
+  }
 
-.right-align {
-  text-align: right;
-}
-  
-/* Estilos para el footer */
-footer {
-   /*  position: absolute;*/
-   /*   bottom: 40px; /* Ajusta la distancia del footer al borde inferior */
-   /* left: 0;*/
-   /*  width: 100%;*/
-    position: running(pie-de-pagina);
-    text-align: center; /* Centra el texto */
-    font-size: 70%; /* Ajusta el tamaño del texto del pie de página */
-}
+  .right-align {
+    text-align: right;
+  }
 
-  @page {
-  @bottom-center {
-    content: element(pie-de-pagina);
+  /* Estilos para el footer */
+  footer {
+    display: table-footer-group;
+    text-align: center;
+    font-size: 70%;
   }
 }
-
 
 /* Estilos para el texto en negrita */
 footer strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Estilo para la línea debajo del texto */
 footer .custom-line {
-    border: none;
-    border-bottom: 1px solid #000;
-    margin: 20px auto; /* Centra la línea horizontal */
-    width: 50%; /* Ajusta la anchura de la línea según sea necesario */
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 20px auto; /* Centra la línea horizontal */
+  width: 50%; /* Ajusta la anchura de la línea según sea necesario */
 }
+
 .espacio-footer {
   height: 300px; /* Ajusta este valor según sea necesario */
 }
