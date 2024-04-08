@@ -156,9 +156,17 @@ footer {
    /*   bottom: 40px; /* Ajusta la distancia del footer al borde inferior */
    /* left: 0;*/
    /*  width: 100%;*/
+    position: running(pie-de-pagina);
     text-align: center; /* Centra el texto */
     font-size: 70%; /* Ajusta el tamaño del texto del pie de página */
 }
+
+  @page {
+  @bottom-center {
+    content: element(pie-de-pagina);
+  }
+}
+
 
 /* Estilos para el texto en negrita */
 footer strong {
