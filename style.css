@@ -1,3 +1,18 @@
+/* Reinicia el contador de páginas y muestra el número de página */
+body {
+  counter-reset: page-counter;
+}
+
+@page {
+  margin: 20mm; /* Margen para evitar contenido cortado */
+
+  @bottom-center {
+    content: counter(page-counter); /* Muestra el número de página */
+  }
+
+  counter-increment: page-counter; /* Incrementa el contador en cada página */
+}
+
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
@@ -147,12 +162,20 @@ h2 {
   .right-align {
     text-align: right;
   }
+}
 
-  /* Estilos para el footer */
-  footer {
-    display: table-footer-group;
-    text-align: center;
-    font-size: 70%;
+/* Estilos para el footer */
+footer {
+  position: running(footer);
+  text-align: center;
+  font-size: 70%;
+}
+
+@page {
+  @footnote {
+    border-top: 1px solid black; /* Agrega una línea delgada encima del footer */
+    padding-top: 2mm; /* Espacio entre la línea y el contenido del footer */
+    content: element(footer); /* Muestra el contenido del footer */
   }
 }
 
