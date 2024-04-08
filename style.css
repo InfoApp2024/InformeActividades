@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  padding-bottom: 70px;
+  padding-bottom: 200px;
+
 }
 
 /* Encabezado */
@@ -151,13 +152,12 @@ section.actividad-realizada {
   
 /* Estilos para el footer */
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 40px; /* Ajusta la distancia del footer al borde inferior */
     left: 0;
     width: 100%;
     text-align: center; /* Centra el texto */
     font-size: 70%; /* Ajusta el tamaño del texto del pie de página */
-    z-index: 1000; /* Asegura que el footer esté sobre cualquier otro contenido */
 }
 
 /* Estilos para el texto en negrita */
