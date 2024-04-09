@@ -115,7 +115,7 @@ footer {
 /* Define el contador de página */
 @page {
   @bottom-center {
-    content: counter(page); /* Muestra el contador de página */
+    content: "Pag " counter(page); /* Muestra el contador de página */
   }
 }
 
