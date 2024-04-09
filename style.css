@@ -112,14 +112,6 @@ footer {
   text-align: center; /* Centra el texto del footer */
 }
 
-/* Define el contador de página */
-@page {
-  @bottom-center {
-    content: "Pag " counter(page); /* Muestra el contador de página */
-  }
-}
-
-
 /* Estilo para el texto en negrita */
 footer strong {
   font-weight: bold;
