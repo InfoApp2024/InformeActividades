@@ -109,6 +109,7 @@ footer {
   color: #000;
   padding: 20px;
   font-size: 70%;
+  text-align: center; /* Centra el texto del footer */
 }
 
 /* Estilo para el texto en negrita */
@@ -139,7 +140,7 @@ body {
 
 /* Estilo para el espacio entre el contenido y el footer */
 .espacio-footer {
-  height: 300px; /* Ajusta este valor según sea necesario */
+  height: 200px; /* Ajusta este valor según sea necesario */
 }
 
 /* Estilos para la impresión */
