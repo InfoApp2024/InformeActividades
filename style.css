@@ -1,23 +1,9 @@
-/* Reinicia el contador de páginas y muestra el número de página */
-body {
-  counter-reset: page-counter;
-}
-
-@page {
-  margin: 20mm; /* Margen para evitar contenido cortado */
-  @bottom-center {
-    content: counter(page-counter); /* Muestra el número de página */
-  }
-  counter-increment: page-counter; /* Incrementa el contador en cada página */
-}
-
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: transparent;
-  padding-bottom: 600px;
 }
 
 /* Encabezado */
@@ -84,7 +70,7 @@ main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 80px; /* Espacio para el footer */
 }
 
 section {
@@ -113,6 +99,50 @@ h2 {
   font-size: 10px;
 }
 
+/* Estilos para el footer */
+footer {
+  position: fixed; /* Fija el footer en la parte inferior de la página */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px;
+  font-size: 70%;
+}
+
+/* Estilo para el texto en negrita */
+footer strong {
+  font-weight: bold;
+}
+
+/* Estilo para la línea debajo del texto */
+footer .custom-line {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 20px auto; /* Centra la línea horizontal */
+  width: 50%; /* Ajusta la anchura de la línea según sea necesario */
+}
+
+/* Reinicia el contador de páginas y muestra el número de página */
+body {
+  counter-reset: page-counter;
+}
+
+@page {
+  margin: 20mm; /* Margen para evitar contenido cortado */
+  @bottom-center {
+    content: counter(page-counter); /* Muestra el número de página */
+  }
+  counter-increment: page-counter; /* Incrementa el contador en cada página */
+}
+
+/* Estilo para el espacio entre el contenido y el footer */
+.espacio-footer {
+  height: 300px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos para la impresión */
 @media print {
   body {
     display: flex;
@@ -152,45 +182,7 @@ h2 {
     color: #333;
   }
 
-  /* Espacio entre el contenido y el footer */
-  section.actividad-realizada {
-    margin-bottom: 300px; /* Ajusta el valor según sea necesario para crear el espacio deseado */
-  }
-
   .right-align {
     text-align: right;
   }
-}
-
-/* Estilos para el footer */
-footer {
-  position: running(footer);
-  text-align: center;
-  font-size: 70%;
-}
-
-@page {
-  @footnote {
-    border-top: 1px solid black; /* Agrega una línea delgada encima del footer */
-    padding-top: 2mm; /* Espacio entre la línea y el contenido del footer */
-    content: element(footer); /* Muestra el contenido del footer */
-    display: if-renders; /* Agregamos esta línea */
-  }
-}
-
-/* Estilos para el texto en negrita */
-footer strong {
-  font-weight: bold;
-}
-
-/* Estilo para la línea debajo del texto */
-footer .custom-line {
-  border: none;
-  border-bottom: 1px solid #000;
-  margin: 20px auto; /* Centra la línea horizontal */
-  width: 50%; /* Ajusta la anchura de la línea según sea necesario */
-}
-
-.espacio-footer {
-  height: 300px; /* Ajusta este valor según sea necesario */
 }
