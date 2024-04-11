@@ -10,13 +10,60 @@ body {
 }
 
 /* Encabezado */
-/* ... */
+header {
+  background-color: #ccc;
+  color: #000;
+  padding: 20px;
+  max-width: 840px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Estilos para el contenedor principal */
-/* ... */
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilos para el texto con la clase proveedor */
+.proveedor {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Estilos para el logo */
+.company-info img {
+  width: 65px;
+  margin-left: 10px;
+}
+
+/* Eliminamos el margen horizontal y el margen superior del NIT */
+.company-info p:nth-of-type(2) {
+  margin: 0;
+}
 
 /* Tablas */
-/* ... */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+  page-break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
 
 /* Contenido principal */
 main {
@@ -30,7 +77,31 @@ main {
   flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
 }
 
-/* ... */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Imágenes */
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.images-container img {
+  max-width: 45%;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+/* Firmas */
+.signature {
+  font-size: 10px;
+}
 
 /* Estilos para el footer */
 footer {
@@ -42,4 +113,78 @@ footer {
   margin-top: auto; /* Empuja el footer hacia abajo */
 }
 
-/* ... */
+/* Estilo para el texto en negrita */
+footer strong {
+  font-weight: bold;
+}
+
+/* Estilo para la línea debajo del texto */
+footer .custom-line {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 20px auto; /* Centra la línea horizontal */
+  width: 50%; /* Ajusta la anchura de la línea según sea necesario */
+}
+
+/* Reinicia el contador de páginas y muestra el número de página */
+body {
+  counter-reset: page-counter;
+}
+
+@page {
+  margin: 20mm; /* Margen para evitar contenido cortado */
+  @bottom-center {
+    content: counter(page-counter); /* Muestra el número de página */
+  }
+  counter-increment: page-counter; /* Incrementa el contador en cada página */
+}
+
+/* Estilo para el espacio entre el contenido y el footer */
+.espacio-footer {
+  height: 500px; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos para la impresión */
+@media print {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .move-right {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .move-right table {
+    width: 30%;
+  }
+
+  .move-right .label {
+    font-weight: bold;
+  }
+
+  .move-right .answer {
+    font-weight: normal;
+  }
+
+  .texto-principal {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+}
