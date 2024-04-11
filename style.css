@@ -76,8 +76,8 @@ main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
+  margin-bottom: 100px; /* Ajusta el valor según el espacio deseado */
   flex: 1 0 auto; /* Hace que el contenido principal ocupe todo el espacio disponible */
-  padding-bottom: 150px; /* Ajusta el valor según el espacio deseado */
 }
 
 section {
