@@ -58,11 +58,21 @@ table {
 
 th, td {
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
 }
 
-th {
-  background-color: #f2f2f2;
+/* Cambios de color para las tablas */
+table tr:nth-child(odd) {
+  background-color: #f0f8ff; /* Azul muy claro */
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+table th {
+  background-color: #6699cc; /* Azul oscuro, pero no demasiado saturado */
+  color: #ffffff; /* Texto en blanco para mejorar el contraste */
 }
 
 /* Contenido principal */
