@@ -162,7 +162,8 @@ body {
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 1.5;
-    color: #333;
+    background-color: #6B64F9;
+    color: #FFFFFF; /* Texto de color blanco */
   }
 
   .move-right table {
