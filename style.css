@@ -61,6 +61,7 @@ table {
 th, td {
   padding: 8px;
   border: 1px solid #ddd;
+  word-wrap: break-word; /* Añadido */
 }
 
 th {
@@ -193,3 +194,4 @@ body {
     text-align: right;
   }
 }
+
