@@ -11,10 +11,10 @@ body {
 
 /* Encabezado */
 header {
-  background-color: #5943FB;
+  background-color: #69C3FA;
   color: #000;
   padding: 20px;
-  max-width: 840px; /* Cambiado de max-width: 840px; */
+  max-width: 100%; /* Cambiado de max-width: 840px; */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ th, td {
 }
 
 th {
-  background-color: #5943FB;
+  background-color: #69C3FA;
 }
 
 /* Contenido principal */
