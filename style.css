@@ -50,13 +50,11 @@ header {
 
 /* Tablas */
 table {
-  width: 95%; /* Cambiado de width: 100%; */
+  width: 100%;
   border-collapse: collapse;
   page-break-inside: avoid;
   margin-bottom: 20px;
   border: none;
-  margin-left: auto; /* Centrar las tablas horizontalmente */
-  margin-right: auto; /* Centrar las tablas horizontalmente */
 }
 
 th, td {
