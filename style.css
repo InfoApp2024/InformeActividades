@@ -54,6 +54,8 @@ table {
  /* border: 2px solid #ccc;*/
   page-break-inside: avoid;
   margin-bottom: 20px;
+  border: none; /* Agregamos esta línea para asegurarnos de eliminar cualquier borde exterior */
+}
 }
 
 th, td {
