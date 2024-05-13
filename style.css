@@ -63,6 +63,7 @@ th, td {
 
 th {
   background-color: #6B64F9;
+  color: #FFFFFF; /* Texto de color blanco */
 }
 
 /* Contenido principal */
