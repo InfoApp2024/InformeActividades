@@ -1,15 +1,14 @@
 /* Estilos generales */
-html, body {
-  height: 100%;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-body {
+  background-color: transparent;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  width: 100vw; /* Añadido */
+  font-size: 20px; /* Cambiado */
 }
 
 /* Encabezado */
@@ -25,15 +24,11 @@ header {
 }
 
 /* Estilos para el contenedor principal */
-main {
-  margin: 0;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  flex: 1;
-  height: 100%;
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* Estilos para el texto con la clase proveedor */
@@ -66,7 +61,7 @@ table {
 th, td {
   padding: 8px;
   border: 1px solid #ddd;
-  word-wrap: break-word;
+  word-wrap: break-word; /* Añadido */
 }
 
 th {
@@ -75,6 +70,16 @@ th {
 }
 
 /* Contenido principal */
+main {
+  margin: 0; /* Cambiado de margin: 20px; */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex: 1;
+}
+
 section {
   margin-bottom: 30px;
 }
@@ -109,7 +114,7 @@ footer {
   font-size: 70%;
   text-align: center;
   margin-top: auto;
-  width: 100%;
+  width: 100%; /* Añadido */
 }
 
 /* Estilo para el texto en negrita */
@@ -117,9 +122,12 @@ footer strong {
   font-weight: bold;
 }
 
-/* Estilo para el espacio entre el contenido y el footer */
-.espacio-footer {
-  height: 500px;
+/* Estilo para la línea debajo del texto */
+footer .custom-line {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 20px auto;
+  width: 50%;
 }
 
 /* Reinicia el contador de páginas y muestra el número de página */
@@ -133,6 +141,11 @@ body {
     content: counter(page-counter);
   }
   counter-increment: page-counter;
+}
+
+/* Estilo para el espacio entre el contenido y el footer */
+.espacio-footer {
+  height: 500px;
 }
 
 /* Estilos para la impresión */
@@ -172,7 +185,7 @@ body {
 
   .texto-principal {
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 14px; /* Cambiado */
     line-height: 1.5;
     color: #333;
   }
