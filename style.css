@@ -156,15 +156,15 @@ body {
     flex: 1;
   }
 
-  .move-right {
+   .move-right {
     display: flex;
     justify-content: flex-end;
     font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 1.5;
-    background-color: #6B64F9;
-    color: #FFFFFF; /* Texto de color blanco */
+    color: #333;
   }
+
 
   .move-right table {
     width: 30%;
@@ -172,6 +172,8 @@ body {
 
   .move-right .label {
     font-weight: bold;
+    background-color: #6B64F9;
+    color: #FFFFFF; /* Texto de color blanco */
   }
 
   .move-right .answer {
