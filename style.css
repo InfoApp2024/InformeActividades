@@ -56,7 +56,6 @@ table {
   margin-bottom: 20px;
   border: none; /* Agregamos esta línea para asegurarnos de eliminar cualquier borde exterior */
 }
-}
 
 th, td {
   padding: 8px;
