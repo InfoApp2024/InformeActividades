@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw; /* Añadido */
+  font-size: 16px; /* Cambiado */
 }
 
 /* Encabezado */
@@ -183,7 +184,7 @@ body {
 
   .texto-principal {
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 14px; /* Cambiado */
     line-height: 1.5;
     color: #333;
   }
