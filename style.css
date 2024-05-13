@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  min-height: 100vh; /* Asegura que el footer siempre esté en la parte inferior */
-  display: flex; /* Agrega flexbox al body */
-  flex-direction: column; /* Establece la dirección del flujo de flexbox en columna */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* Añadido */
 }
 
 /* Encabezado */
@@ -14,7 +15,7 @@ header {
   background-color: #FFFFFF;
   color: #000;
   padding: 20px;
-  max-width: 100%; /* Cambiado de max-width: 840px; */
+  max-width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -49,12 +50,11 @@ header {
 
 /* Tablas */
 table {
-  width: 100%; /* Cambiado de width: 100%; */
+  width: 100%;
   border-collapse: collapse;
- /* border: 2px solid #ccc;*/
   page-break-inside: avoid;
   margin-bottom: 20px;
-  border: none; /* Agregamos esta línea para asegurarnos de eliminar cualquier borde exterior */
+  border: none;
 }
 
 th, td {
@@ -64,12 +64,12 @@ th, td {
 
 th {
   background-color: #6B64F9;
-  color: #FFFFFF; /* Texto de color blanco */
+  color: #FFFFFF;
 }
 
 /* Contenido principal */
 main {
-  margin: 20px; /* Cambiado de margin: 20px auto; */
+  margin: 0; /* Cambiado de margin: 20px; */
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -110,8 +110,9 @@ footer {
   color: #000;
   padding: 20px;
   font-size: 70%;
-  text-align: center; /* Centra el texto del footer */
-  margin-top: auto; /* Empuja el footer hacia abajo */
+  text-align: center;
+  margin-top: auto;
+  width: 100%; /* Añadido */
 }
 
 /* Estilo para el texto en negrita */
@@ -123,8 +124,8 @@ footer strong {
 footer .custom-line {
   border: none;
   border-bottom: 1px solid #000;
-  margin: 20px auto; /* Centra la línea horizontal */
-  width: 50%; /* Ajusta la anchura de la línea según sea necesario */
+  margin: 20px auto;
+  width: 50%;
 }
 
 /* Reinicia el contador de páginas y muestra el número de página */
@@ -133,16 +134,16 @@ body {
 }
 
 @page {
-  margin: 20mm; /* Margen para evitar contenido cortado */
+  margin: 20mm;
   @bottom-center {
-    content: counter(page-counter); /* Muestra el número de página */
+    content: counter(page-counter);
   }
-  counter-increment: page-counter; /* Incrementa el contador en cada página */
+  counter-increment: page-counter;
 }
 
 /* Estilo para el espacio entre el contenido y el footer */
 .espacio-footer {
-  height: 500px; /* Ajusta este valor según sea necesario */
+  height: 500px;
 }
 
 /* Estilos para la impresión */
@@ -157,7 +158,7 @@ body {
     flex: 1;
   }
 
-   .move-right {
+  .move-right {
     display: flex;
     justify-content: flex-end;
     font-family: Arial, sans-serif;
@@ -166,7 +167,6 @@ body {
     color: #333;
   }
 
-
   .move-right table {
     width: 30%;
   }
@@ -174,7 +174,7 @@ body {
   .move-right .label {
     font-weight: bold;
     background-color: #6B64F9;
-    color: #FFFFFF; /* Texto de color blanco */
+    color: #FFFFFF;
   }
 
   .move-right .answer {
@@ -192,4 +192,3 @@ body {
     text-align: right;
   }
 }
-
