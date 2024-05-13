@@ -47,14 +47,7 @@ header {
   margin: 0;
 }
 
-/* Tablas */
-table {
-  width: 140%; /* Cambiado de width: 100%; */
-  border-collapse: collapse;
-  border: 2px solid #ccc;
-  page-break-inside: avoid;
-  margin-bottom: 20px;
-}
+
 
 th, td {
   padding: 8px;
