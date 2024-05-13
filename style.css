@@ -49,7 +49,7 @@ header {
 
 /* Tablas */
 table {
-  width: 100%; /* Cambiado de width: 100%; */
+  width: 140%; /* Cambiado de width: 100%; */
   border-collapse: collapse;
   border: 2px solid #ccc;
   page-break-inside: avoid;
