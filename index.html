@@ -1,150 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informe Técnico</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <main class="texto-principal">
-    <header>
-      <img src="https://i.postimg.cc/w15cN4tZ/logo.png" alt="Logo" class="logo" />
-      <div class="company-info">
-        <h1>Nombre Empresa</h1>
-        <p>Nit</p>
-      </div>
-    </header>
-      <br />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.postimg.cc/w15cN4tZ/logo.png" alt="Logo" class="logo">
+            <div class="company-info">
+                <h1>Nombre Empresa</h1>
+                <p>NIT: [Número de NIT]</p>
+            </div>
+        </header>
 
-      <section class="move-right">
-        <table>
-          <tr>
-            <td class="label">Cliente:</td>
-            <td class="answer">[Respuesta]</td>
-          </tr>
-          <tr>
-            <td class="label">Orden:</td>
-            <td class="answer">[Respuesta]</td>
-          </tr>
-          <tr>
-            <td class="label">Fecha:</td>
-            <td class="answer">[Respuesta]</td>
-          </tr>
-        </table>
-      </section>
-      <br /><br /><br /><br />
+        <section class="client-info">
+            <h2>Información del Servicio</h2>
+            <table>
+                <tr>
+                    <td><strong>Cliente:</strong></td>
+                    <td>[Nombre del Cliente]</td>
+                    <td><strong>Orden:</strong></td>
+                    <td>[Número de Orden]</td>
+                </tr>
+                <tr>
+                    <td><strong>Fecha:</strong></td>
+                    <td>[Fecha del Servicio]</td>
+                    <td><strong>Ciudad:</strong></td>
+                    <td>[Ciudad]</td>
+                </tr>
+            </table>
+        </section>
 
-      <section>
-        <h2>Información del Cliente</h2>
-        <table>
-          <tr>
-            <th style="font-size: 10px; text-align: center">Orden</th>
-            <th style="font-size: 10px; text-align: center">Responsable</th>
-            <th style="font-size: 10px; text-align: center">Mantenimiento</th>
-            <th style="font-size: 10px; text-align: center">Ciudad</th>
-            <th style="font-size: 10px; text-align: center">Planta</th>
-            <th style="font-size: 10px; text-align: center">Equipo</th>
-            <th style="font-size: 10px; text-align: center">Placa</th>
-          </tr>
-          <tr>
-            <td style="font-size: 10px">&lt;&lt;[ORDEN CLIENTE]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[AUTORIZADO POR]&gt;&gt;</td>
-            <td style="font-size: 10px">
-              &lt;&lt;[TIPO DE MANTENIMIENTO]&gt;&gt;
-            </td>
-            <td style="font-size: 10px">&lt;&lt;[ID_CIUDAD]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[ID_PLANTA]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[NOMBRE_EQP]&gt;&gt;</td>
-            <td style="font-size: 10px">PLACA</td>
-          </tr>
-          <!-- Puedes agregar más filas según sea necesario -->
-        </table>
-      </section>
-      <section>
-        <h2>Información del Servicio</h2>
-        <table>
-          <tr>
-            <th style="font-size: 10px; text-align: center">Entrega</th>
-            <th style="font-size: 10px; text-align: center">N° Técnicos</th>
-            <th style="font-size: 10px; text-align: center">
-              Tiempo de Actividad
-            </th>
-            <th style="font-size: 10px; text-align: center">
-              Suministraron Repuestos
-            </th>
-            <th style="font-size: 10px; text-align: center">
-              Surgieron Novedades
-            </th>
-            <th style="font-size: 10px; text-align: center">
-              Link de Novedades
-            </th>
-          </tr>
-          <tr>
-            <td style="font-size: 10px">&lt;&lt;[ORDEN CLIENTE]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[AUTORIZADO POR]&gt;&gt;</td>
-            <td style="font-size: 10px">
-              &lt;&lt;[TIPO DE MANTENIMIENTO]&gt;&gt;
-            </td>
-            <td style="font-size: 10px">&lt;&lt;[ID_CIUDAD]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[ID_PLANTA]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[NOMBRE_EQP]&gt;&gt;</td>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <h2>Registro de Repuestos y/o Consumibles</h2>
-        <table>
-          <tr>
-            <th style="font-size: 10px; text-align: center">Orden</th>
-            <th style="font-size: 10px; text-align: center">Responsable</th>
-            <th style="font-size: 10px; text-align: center">Mantenimiento</th>
-            <th style="font-size: 10px; text-align: center">Ciudad</th>
-          </tr>
-          <tr>
-            <td style="font-size: 10px">&lt;&lt;[ORDEN CLIENTE]&gt;&gt;</td>
-            <td style="font-size: 10px">&lt;&lt;[AUTORIZADO POR]&gt;&gt;</td>
-            <td style="font-size: 10px">
-              &lt;&lt;[TIPO DE MANTENIMIENTO]&gt;&gt;
-            </td>
-            <td style="font-size: 10px">&lt;&lt;[ID_CIUDAD]&gt;&gt;</td>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <h2>Actividad Solicitada</h2>
-        <p><!-- Aquí va la actividad solicitada --></p>
-      </section>
-      <section>
-        <h2>Actividad Realizada</h2>
-        <p><!-- Aquí va la actividad realizada --></p>
-      </section>
-      <section>
-        <h2>Fotos</h2>
-        <div class="images-container">
-          <img src="foto_antes.jpg" alt="Foto Antes" />
-          <img src="foto_despues.jpg" alt="Foto Después" />
-        </div>
-      </section>
-      <section>
-        <div class="signature">
-          <div>
-            <p>Actividad recibida por:</p>
-            <p>______________________________</p>
-            <p>Firma:</p>
-            <p>______________________________</p>
-          </div>
-          <div>
-            <p>Actividad entregada por:</p>
-            <p>______________________________</p>
-            <p>Firma:</p>
-            <p>______________________________</p>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <p>© Todos los derechos InfoApp</p>
-      </footer>
-    </main>
-  </body>
+        <section class="service-details">
+            <h2>Detalles del Servicio</h2>
+            <table>
+                <tr>
+                    <th>Responsable</th>
+                    <th>Tipo de Mantenimiento</th>
+                    <th>Planta</th>
+                    <th>Equipo</th>
+                    <th>Placa</th>
+                </tr>
+                <tr>
+                    <td>[Responsable]</td>
+                    <td>[Tipo de Mantenimiento]</td>
+                    <td>[Planta]</td>
+                    <td>[Nombre del Equipo]</td>
+                    <td>[Número de Placa]</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="service-info">
+            <h2>Información Adicional del Servicio</h2>
+            <table>
+                <tr>
+                    <th>Entrega</th>
+                    <th>N° Técnicos</th>
+                    <th>Tiempo de Actividad</th>
+                    <th>Repuestos Suministrados</th>
+                    <th>Novedades</th>
+                </tr>
+                <tr>
+                    <td>[Fecha de Entrega]</td>
+                    <td>[Número de Técnicos]</td>
+                    <td>[Tiempo de Actividad]</td>
+                    <td>[Sí/No]</td>
+                    <td>[Sí/No]</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="activity-description">
+            <h2>Descripción de la Actividad</h2>
+            <div class="activity-box">
+                <h3>Actividad Solicitada</h3>
+                <p>[Descripción de la actividad solicitada]</p>
+            </div>
+            <div class="activity-box">
+                <h3>Actividad Realizada</h3>
+                <p>[Descripción de la actividad realizada]</p>
+            </div>
+        </section>
+
+        <section class="photos">
+            <h2>Registro Fotográfico</h2>
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="foto_antes.jpg" alt="Antes del servicio">
+                    <p>Antes</p>
+                </div>
+                <div class="photo">
+                    <img src="foto_despues.jpg" alt="Después del servicio">
+                    <p>Después</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="signatures">
+            <h2>Firmas</h2>
+            <div class="signature-box">
+                <div class="signature">
+                    <p><strong>Actividad recibida por:</strong></p>
+                    <p>____________________________</p>
+                    <p><strong>Firma:</strong></p>
+                    <p>____________________________</p>
+                </div>
+                <div class="signature">
+                    <p><strong>Actividad entregada por:</strong></p>
+                    <p>____________________________</p>
+                    <p><strong>Firma:</strong></p>
+                    <p>____________________________</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© Todos los derechos reservados - InfoApp</p>
+        </footer>
+    </div>
+</body>
 </html>
