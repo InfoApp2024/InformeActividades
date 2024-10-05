@@ -22,6 +22,28 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Reglas para control de paginación */
+header, 
+.client-info, 
+.service-details, 
+.service-info, 
+.activity-description, 
+.photos, 
+.signatures {
+    page-break-inside: avoid;
+}
+
+.service-details, 
+.activity-description, 
+.photos, 
+.signatures {
+    page-break-before: always;
+}
+
+table {
+    page-break-inside: avoid;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -120,10 +142,22 @@ footer {
     }
 
     .container {
-        width: 190mm; /* Ajustado para coincidir con el ancho no impreso */
+        width: 190mm;
         min-height: auto;
-        margin: 0 auto; /* Centrado horizontalmente */
-        padding: 10mm 20mm; /* Reducido el padding para la impresión, pero manteniendo márgenes */
+        margin: 0 auto;
+        padding: 10mm 20mm;
         box-shadow: none;
+    }
+
+    /* Ajustes adicionales para impresión */
+    h2 {
+        page-break-after: avoid;
+    }
+
+    h2 + table,
+    h2 + .activity-box,
+    h2 + .photo-container,
+    h2 + .signature-box {
+        page-break-before: avoid;
     }
 }
