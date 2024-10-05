@@ -126,4 +126,20 @@ footer {
         padding: 10mm 20mm; /* Reducido el padding para la impresión, pero manteniendo márgenes */
         box-shadow: none;
     }
+
+    .repuestos-table td p {
+        display: flex;
+    }
+    .repuestos-table td p span:nth-child(1) {
+        width: 40%;
+    }
+    .repuestos-table td p span:nth-child(2) {
+        width: 20%;
+    }
+    .repuestos-table td p span:nth-child(3) {
+        width: 20%;
+    }
+    .repuestos-table td p span:nth-child(4) {
+        width: 20%;
+    }
 }
