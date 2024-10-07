@@ -19,12 +19,12 @@ body {
     padding: 20mm 10mm;
 }
 .page-content {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 .main-content {
-    flex: 1 0 auto;
+    flex: 1;
 }
 header {
     display: flex;
@@ -100,11 +100,6 @@ th {
     margin-top: 5pt;
     font-size: 9pt;
 }
-.signature-page {
-    page-break-before: always;
-    break-before: page;
-    margin-top: auto;
-}
 .signature-box {
     display: flex;
     justify-content: space-between;
@@ -127,7 +122,7 @@ footer {
         background-color: white;
         font-size: 10pt;
     }
-    
+
     .container {
         width: 100%;
         min-height: auto;
@@ -135,48 +130,44 @@ footer {
         padding: 0;
         box-shadow: none;
     }
-    
+
     .page-content {
-        display: block;
         padding: 10mm;
     }
-    
+
     .main-content {
-        margin-bottom: 0;
+        margin-bottom: 100mm;
     }
-    
+
     .logo {
         width: 60pt;
     }
-    
+
     .company-info h1 {
         font-size: 16pt;
     }
-    
+
     h2 {
         font-size: 13pt;
     }
-    
+
     table, .activity-box p, .signature p {
         font-size: 9pt;
     }
-    
+
     .activity-box h3 {
         font-size: 11pt;
     }
-    
+
     .photo p {
         font-size: 8pt;
     }
-    
-    .signature-page {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+
+    .signatures {
         page-break-before: always;
         break-before: page;
     }
-    
+
     footer {
         position: fixed;
         bottom: 10mm;
@@ -185,4 +176,4 @@ footer {
         text-align: center;
         font-size: 8pt;
     }
-}
+} 
