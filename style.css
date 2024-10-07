@@ -4,83 +4,89 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.4;
     color: #333;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    font-size: 10px; /* Aquí puedes controlar el tamaño de fuente general */    
+    font-size: 11pt;
 }
 
 .container {
-    width: 190mm; /* Reducido de 210mm */
+    width: 190mm;
     min-height: 297mm;
-    padding: 20mm 30mm; /* Aumentado el padding horizontal */
+    padding: 20mm 10mm;
     margin: 10mm auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    margin-bottom: 15pt;
+    border-bottom: 1pt solid #333;
+    padding-bottom: 10pt;
 }
 
 .logo {
-    width: 100px;
+    width: 80pt;
     height: auto;
 }
 
 .company-info h1 {
     margin: 0;
-    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-size: 18pt;
 }
 
 .company-info p {
-    margin: 5px 0 0;
-    font-size: 14px;
+    margin: 5pt 0 0;
+    font-size: 10pt;
 }
 
 h2 {
+    font-family: Arial, sans-serif;
     color: #2c3e50;
-    border-bottom: 1px solid #bdc3c7;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    border-bottom: 0.5pt solid #bdc3c7;
+    padding-bottom: 5pt;
+    margin-top: 20pt;
+    font-size: 14pt;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 15pt;
+    font-size: 10pt;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 0.5pt solid #ddd;
+    padding: 8pt;
     text-align: left;
 }
 
 th {
     background-color: #f2f2f2;
     font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 .activity-box {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
+    border: 0.5pt solid #ddd;
+    padding: 12pt;
+    margin-bottom: 15pt;
 }
 
 .activity-box h3 {
     margin-top: 0;
     color: #2c3e50;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
 }
 
 .photo-container {
@@ -96,7 +102,12 @@ th {
 .photo img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    border: 0.5pt solid #ddd;
+}
+
+.photo p {
+    margin-top: 5pt;
+    font-size: 9pt;
 }
 
 .signature-box {
@@ -108,23 +119,46 @@ th {
     width: 45%;
 }
 
+.signature p {
+    margin: 5pt 0;
+    font-size: 10pt;
+}
+
 footer {
-    margin-top: 30px;
+    margin-top: 20pt;
     text-align: center;
-    font-size: 12px;
+    font-size: 9pt;
     color: #777;
 }
 
 @media print {
     body {
         background-color: white;
+        font-size: 10pt;
     }
-
     .container {
-        width: 190mm; /* Ajustado para coincidir con el ancho no impreso */
+        width: 190mm;
         min-height: auto;
-        margin: 0 auto; /* Centrado horizontalmente */
-        padding: 10mm 20mm; /* Reducido el padding para la impresión, pero manteniendo márgenes */
+        margin: 0;
+        padding: 10mm;
         box-shadow: none;
+    }
+    .logo {
+        width: 60pt;
+    }
+    .company-info h1 {
+        font-size: 16pt;
+    }
+    h2 {
+        font-size: 13pt;
+    }
+    table, .activity-box p, .signature p {
+        font-size: 9pt;
+    }
+    .activity-box h3 {
+        font-size: 11pt;
+    }
+    .photo p, footer {
+        font-size: 8pt;
     }
 }
